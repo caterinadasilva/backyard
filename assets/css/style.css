@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, flexquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: flex;
+}
+body {
+line-height: 1;
+font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+background-color: #fff;
+color: #303841;
+background-image: url(../img/bg.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+min-height: 100vh;
+}
+ol, ul {
+list-style: none;
+}
+flexquote, q {
+quotes: none;
+}
+flexquote:before, flexquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* ESTILOS BÁSICOS */
+.container {
+display: flex;
+width: 100%;
+max-width: 960px;
+margin: 0 auto;
+}
+header {
+background-color: #fff;
+color: #303841;
+padding: 4em 0 2em;
+width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'El Messiri', sans-serif;
+line-height: 90%;
+}
+h1 {
+font-size: 4rem;
+}
+h2 {
+font-size: 3.5rem;
+}
+h3 {
+font-size: 3rem;
+}
+h4 {
+font-size: 2.5rem;
+}
+.lead {
+max-width: 660px;
+margin: 2em auto 1em;
+font-size: 120%;
+}
+form {
+width: 90%;
+margin: 0 auto;
+max-width: 600px;
+padding: 0 5%;
+font-size: 85%;
+}
+label {
+display: flex;
+font-weight: 800;
+color: #BE3144;
+margin: 1.2em 0 .5em;
+float: left;
+}
+.form-input {
+margin: 2em 0;
+}
+input, select {
+width: 97%;
+border-radius: 3px;
+border: 1px solid #f1f1f1;
+line-height: 120%;
+padding: 2% 1%;
+font-size: 140%;
+transition: .5s ease all;
+background: rgba(255,255,255,.9);
+}
+input::placeholder {
+color: gray;
+}
+.btn {
+text-align: center;
+cursor: pointer;
+background-color: #BE3144;
+color: #fff;
+letter-spacing: 1px;
+font-size: 90%;
+padding: 1em 1.5em;
+transition: .5s ease all;
+margin: 2em auto 1em;
+border: 1px solid #BE3144;
+width: 100%;
+border-radius: 25px;
+text-transform: uppercase;
+}
+.btn:hover, .btn:active, .btn:focus {
+background-color: #9C182A;
+border: 1px solid #9C182A;
+transition: .5s ease all;
+box-shadow: 0px 10px 10px rgba(48, 56, 65, .9);
+}
+a {
+color: #BE3144;
+}
+a:hover,
+a:focus,
+a:active {
+color: #750111;
+}
+p {
+font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+display: flex;
+margin: 2em 0 0;
+line-height: 1.4;
+text-align: justify;
+}
+span {
+border-bottom: 2px #BE3144 solid;
+font-weight: 700;
+}
+b {
+font-weight: 800;
+color: #BE3144;
+}
+small {
+font-size: .8rem;
+}
+footer {
+background-color: #fff;
+display: flex;
+width: 100%;
+padding: 0 0 2em;
+overflow: hidden;
+text-align: center;
+}
+/*INPUT CHECK*/
+input[type|=check] {
+display: inline-flex;
+width: auto;
+}
+label[for|=check] {
+font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+font-weight: normal;
+display: inline-flex;
+}
+/* INPUT NUMBER SIN FLECHAS */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+/* Especial */
+header .container {
+justify-content: space-between;
+}
+header nav ul {
+display: flex;
+justify-content: space-around;
+}
+header nav ul li {
+padding: 1em;
+}
+header a {
+text-decoration: none;
+font-weight: bolder;
+text-transform: uppercase;
+}
+#hero {
+padding: 3em 0 5em;
+}
+#hero .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#hero .left {
+margin-right: 2.5em;
+}
+#hero .right{
+margin-left: 2.5em;
+border-radius: 5px;
+background-color: rgba(58, 71, 80, .7);
+color: #fff;
+text-align: center;
+padding: 3em 1em;
+box-shadow: 0px 15px 35px rgba(48, 56, 65, .9);
+}
+.left, .right {
+width: 50%;
+}
+footer .container {
+    flex-direction: column;
+    text-align: left;
+}
